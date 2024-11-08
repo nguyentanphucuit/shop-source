@@ -3,7 +3,7 @@ import ListSource from "./ListSource";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="mx-auto">
       <ListSource />
     </div>
   );
