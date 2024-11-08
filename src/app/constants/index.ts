@@ -1,4 +1,7 @@
-import sourceImg from "/public/assets/img/bgmetagun1.jpg";
+import bg20 from "/public/assets/img/bg20.jpg";
+import bg23 from "/public/assets/img/bg23.png";
+import bg25 from "/public/assets/img/bg25.jpg";
+import bg26 from "/public/assets/img/bg26.jpg";
 
 const listSource = [
   {
@@ -7,7 +10,7 @@ const listSource = [
     subtitle: "",
     type: "GAME H5",
     date: "date",
-    image: sourceImg,
+    image: bg20,
     link: "#",
     price: 999000,
     discount: 20,
@@ -18,7 +21,7 @@ const listSource = [
     subtitle: "",
     type: "GAME MOBILE",
     date: "date",
-    image: sourceImg,
+    image: bg23,
     link: "#",
     price: 2899000,
     discount: 20,
@@ -29,7 +32,7 @@ const listSource = [
     subtitle: "",
     type: "GAME PC",
     date: "date",
-    image: sourceImg,
+    image: bg25,
     link: "#",
     price: 3499000,
     discount: 20,
@@ -40,7 +43,7 @@ const listSource = [
     subtitle: "",
     type: "GAME H5",
     date: "date",
-    image: sourceImg,
+    image: bg26,
     link: "#",
     price: 6699000,
     discount: 20,

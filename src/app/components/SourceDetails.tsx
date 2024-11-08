@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
 import { formatPriceVND } from "@/app/constants/common";
 import { StaticImageData } from "next/image";
 
@@ -27,11 +27,11 @@ const SourceDetails = ({
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div className="relative w-76 h-40">
         <Link href={link} target="_blank">
-          <Image
+          <ExportedImage
             fill
             className="rounded-t-lg"
             alt="metagun button"
-            src={image}></Image>
+            src={image}></ExportedImage>
         </Link>
       </div>
       <div className="p-5">
