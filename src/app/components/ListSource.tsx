@@ -1,7 +1,7 @@
 "use client";
 import React, { Suspense } from "react";
 import SourceDetails from "@/app/components/SourceDetails";
-import sourceImg from "/public/assets/img/bgmetagun1.jpg";
+import sourceImg from "/public/assets/img/background.png";
 import ExportedImage from "next-image-export-optimizer";
 import Search from "../ui/search";
 import { fetchFilteredSource, fetchSourcesPage } from "@/app/constants/common";
@@ -19,13 +19,21 @@ const ListSourceInfo = () => {
   return (
     <>
       <ExportedImage
-        className="rounded-t-lg"
+        className=""
         alt="metagun button"
         src={sourceImg}></ExportedImage>
       <div className="pt-12">
         <Suspense>
-          <Search placeholder="Type something ..." />
+          <Search placeholder="Tìm kiếm ..." />
         </Suspense>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {sources.map((source) => (
+            <SourceDetails key={source.id} {...source} />
+          ))}
+        </div>
+        <Pagination totalPages={totalPages} />
+      </div>
+      <div className="pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {sources.map((source) => (
             <SourceDetails key={source.id} {...source} />

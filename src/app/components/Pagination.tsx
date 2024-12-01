@@ -35,15 +35,15 @@ const Pagination = ({ totalPages }: { totalPages: number }) => {
       <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
         <div>
           <p className="text-sm  text-gray-700">
-            Showing
+            Hiển thị
             <span className="font-medium px-1">{start}</span>
-            to
+            từ
             <span className="font-medium px-1">{end}</span>
-            of
+            đến
             <span className="font-medium px-1">
               {totalNumberSearchQuery(query)}
             </span>
-            results
+            tổng sản phẩm
           </p>
         </div>
         <div>

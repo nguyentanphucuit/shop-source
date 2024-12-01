@@ -1,4 +1,6 @@
+import ExportedImage from "next-image-export-optimizer";
 import React from "react";
+import logo from "/public/assets/img/labuca-logo.png";
 // import ExportedImage from "next-image-export-optimizer";
 
 const Navbar = () => {
@@ -47,31 +49,35 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            {/* <div className="flex shrink-0 items-center">
-          <img className="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-        </div> */}
+            <div className="flex shrink-0 items-center">
+              <ExportedImage
+                className="h-12 w-24"
+                alt="metagun button"
+                src={logo}></ExportedImage>
+              {/* <img className="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"> */}
+            </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <a
                   href="#"
                   className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                   aria-current="page">
-                  Dashboard
+                  Trang chủ
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
-                  Team
+                  Giày cao gót
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
-                  Projects
+                  Giày Sandal
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
-                  Calendar
+                  Thông tin
                 </a>
               </div>
             </div>
